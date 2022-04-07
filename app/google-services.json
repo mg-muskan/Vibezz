@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "911778936830",
+    "project_id": "vibezz-61f6b",
+    "storage_bucket": "vibezz-61f6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911778936830:android:8a714393d34f0e1734b2af",
+        "android_client_info": {
+          "package_name": "com.vibezz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911778936830-p8d9hs8qm7q25lbkuuej21r9kdji435d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnHE3qN-ArPnZTXlGU2g4opr3-_AUlHXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911778936830-p8d9hs8qm7q25lbkuuej21r9kdji435d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

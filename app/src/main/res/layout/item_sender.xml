@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+    <TextView
+        android:id="@+id/SenderM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/sent"
+        android:layout_marginLeft="10dp"
+        android:minWidth="60dp"
+        android:maxHeight="400dp"
+        android:minHeight="35dp"
+        android:maxWidth="310dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/STime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:21 AM"
+        android:paddingRight="15dp"
+        android:textSize="8sp"
+        android:paddingBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/SenderM"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SmallSp"
+        android:paddingEnd="15dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

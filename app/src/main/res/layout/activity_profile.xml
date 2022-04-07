@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8C5BD3"
+    tools:context=".Activities.Profile">
+
+    <ImageView
+        android:id="@+id/leftArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="?android:selectableItemBackground"
+        android:padding="16dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/abc_vector_test"
+        tools:ignore="ContentDescription,PrivateResource" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="20dp"
+        android:padding="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:src="@drawable/user_stylish"
+            app:civ_border_color="#ff000000"
+            app:civ_border_width="1dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="-30dp"
+            app:srcCompat="@drawable/plus"
+            tools:ignore="ContentDescription,VectorDrawableCompat" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvUser"
+                style="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Name:"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/User"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:ems="5"
+                android:hint="Enter Your Name"
+                android:padding="14sp"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText,LabelFor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAbout"
+                style="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="About:"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/About"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:ems="5"
+                android:hint="About"
+                android:importantForAutofill="no"
+                android:textSize="16sp"
+                android:padding="14sp"
+                android:textColor="@color/white"
+                android:inputType="textPersonName"
+                tools:ignore="HardcodedText,LabelFor" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/btn_bg"
+            android:orientation="vertical"
+            android:text="Save"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/linear_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="90dp"
+        tools:ignore="UnknownId,UnknownIdInLayout">
+
+        <TextView
+            android:id="@+id/tvInvite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="15dp"
+            android:paddingTop="7.5dp"
+            android:paddingBottom="7.5dp"
+            android:text="Invite or Refer"
+            android:textStyle="bold"
+            app:drawableTint="#8C5BD3"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/tvNotifs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="15dp"
+            android:paddingTop="7.5dp"
+            android:paddingBottom="7.5dp"
+            android:text="Notification"
+            android:textStyle="bold"
+            app:drawableTint="#8C5BD3"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tvLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="15dp"
+            android:paddingTop="7.5dp"
+            android:paddingBottom="7.5dp"
+            android:text="Logout"
+            android:textStyle="bold"
+            app:drawableTint="#8C5BD3"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</RelativeLayout>

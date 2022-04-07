@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/grayBackground"
+    tools:context=".Activities.SignUp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        tools:ignore="UselessLeaf,UselessParent" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/ic_launcher_new"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/imageGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="5dp"
+            android:paddingStart="20dp"
+            android:text="Sign in with Google"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:background="@drawable/btn_bg"
+            app:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/googleg_standard_color_18"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/imageFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="5dp"
+            android:paddingStart="15dp"
+            android:text="Sign in with Facebook"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="#3c5a9a"
+            android:drawableLeft="@drawable/facebook_3_2"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,UnusedAttribute" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/line_design"
+            tools:ignore="ContentDescription" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/imSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="5dp"
+            android:paddingStart="20dp"
+            android:text="Sign up / Create Account"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:foreground="@drawable/rectangle"
+            android:background="@drawable/btn_bg"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:background="?selectableItemBackground"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Already have an account? Login."
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</LinearLayout>

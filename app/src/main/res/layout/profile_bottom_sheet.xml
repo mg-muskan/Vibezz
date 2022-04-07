@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:layout_width="70dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#4A4A4A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/remove"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/delete_pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="10dp"
+        android:text="Remove"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/remove"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/i_cam"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/diaphragm"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintStart_toEndOf="@+id/remove"
+        app:layout_constraintEnd_toStartOf="@id/i_gallery"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:textColor="#000"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="HardcodedText"
+        app:layout_constraintStart_toEndOf="@+id/remove"
+        app:layout_constraintEnd_toStartOf="@id/i_gallery"
+        app:layout_constraintTop_toBottomOf="@id/i_cam" />
+
+    <ImageView
+        android:id="@+id/i_gallery"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/gallery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery"
+        android:textColor="#000"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/i_gallery"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

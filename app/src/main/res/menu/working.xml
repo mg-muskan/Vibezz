@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:iconTint="@color/white"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction,HardcodedText" />
+
+    <item
+        android:id="@+id/Profile"
+        android:icon="@drawable/user_black_stylish"
+        app:iconTint="@color/white"
+        android:title="Profile"
+        android:fadingEdge="vertical"
+        app:showAsAction="always"
+        tools:ignore="HardcodedText" />
+
+</menu>
